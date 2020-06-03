@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ColorTools</string>
+    <string name="color_percent">%1$s&#037;</string>
+</resources>
