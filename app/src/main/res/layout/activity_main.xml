@@ -43,4 +43,131 @@
         app:layout_constraintStart_toEndOf="@id/mainColorPercentLeft"
         app:layout_constraintTop_toTopOf="@id/mainColorPercentLeft" />
 
+    <ImageView
+        android:id="@+id/mainColorPlateLeft"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPercentLeft" />
+
+    <ImageView
+        android:id="@+id/mainColorPlateRight"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPercentLeft" />
+
+    <TextView
+        android:id="@+id/mainColorPlateAdd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/symbol_add"
+        android:textSize="@dimen/fontSize48"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/mainColorPlateLeft"
+        app:layout_constraintEnd_toStartOf="@id/mainColorPlateRight"
+        app:layout_constraintStart_toEndOf="@id/mainColorPlateLeft"
+        app:layout_constraintTop_toTopOf="@id/mainColorPlateLeft" />
+
+    <TextView
+        android:id="@+id/mainColorPlateLeftRGB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/rgb_value"
+        android:textSize="@dimen/fontSize16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/mainColorPlateLeft"
+        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateLeft"
+        app:layout_constraintRight_toRightOf="@id/mainColorPlateLeft"
+        app:layout_constraintStart_toStartOf="@id/mainColorPlateLeft"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateLeft" />
+
+    <TextView
+        android:id="@+id/mainColorPlateRightRGB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/rgb_value"
+        android:textSize="@dimen/fontSize16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/mainColorPlateRight"
+        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateRight"
+        app:layout_constraintRight_toRightOf="@id/mainColorPlateRight"
+        app:layout_constraintStart_toStartOf="@id/mainColorPlateRight"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateRight" />
+
+    <TextView
+        android:id="@+id/mainColorPlateEqual"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/symbol_equal_portrait"
+        android:textSize="@dimen/fontSize48"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateAdd" />
+
+    <ImageView
+        android:id="@+id/mainColorPlateFinal"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/app_name"
+        android:src="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateEqual" />
+
+    <TextView
+        android:id="@+id/mainColorPlateFinalRGB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/rgb_value"
+        android:textSize="@dimen/fontSize16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/mainColorPlateFinal"
+        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateFinal"
+        app:layout_constraintRight_toRightOf="@id/mainColorPlateFinal"
+        app:layout_constraintStart_toStartOf="@id/mainColorPlateFinal"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateFinal" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/rgb_description"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/fontSize26"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/mainColorPlateFinalRGB"
+        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateFinalRGB"
+        app:layout_constraintRight_toRightOf="@id/mainColorPlateFinalRGB"
+        app:layout_constraintStart_toStartOf="@id/mainColorPlateFinalRGB"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateFinalRGB" />
 </androidx.constraintlayout.widget.ConstraintLayout>

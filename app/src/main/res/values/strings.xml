@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ColorTools</string>
     <string name="color_percent">%1$s&#037;</string>
+    <string name="symbol_add">+</string>
+    <string name="symbol_equal_portrait">||</string>
+    <string name="rgb_value">RGB：%1$s</string>
+    <string name="rgb_description">R：红；G：绿；B：蓝</string>
 </resources>
