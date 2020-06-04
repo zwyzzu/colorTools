@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/mainColorPercentLeft"
+        android:id="@+id/mainColorSeekLeft"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:text="@string/color_percent"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/mainColorPercentRight"
+        android:id="@+id/mainColorSeekRight"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:text="@string/color_percent"
@@ -27,21 +27,19 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ProgressBar
-        android:id="@+id/mainColorPercent"
+    <SeekBar
+        android:id="@+id/mainColorSeek"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintBottom_toBottomOf="@id/mainColorPercentLeft"
-        app:layout_constraintEnd_toStartOf="@id/mainColorPercentRight"
-        app:layout_constraintLeft_toRightOf="@id/mainColorPercentLeft"
-        app:layout_constraintRight_toLeftOf="@id/mainColorPercentRight"
-        app:layout_constraintStart_toEndOf="@id/mainColorPercentLeft"
-        app:layout_constraintTop_toTopOf="@id/mainColorPercentLeft" />
+        android:progress="0"
+        android:max="10"
+        app:layout_constraintBottom_toBottomOf="@id/mainColorSeekLeft"
+        app:layout_constraintEnd_toStartOf="@id/mainColorSeekRight"
+        app:layout_constraintLeft_toRightOf="@id/mainColorSeekLeft"
+        app:layout_constraintRight_toLeftOf="@id/mainColorSeekRight"
+        app:layout_constraintStart_toEndOf="@id/mainColorSeekLeft"
+        app:layout_constraintTop_toTopOf="@id/mainColorSeekLeft" />
 
     <ImageView
         android:id="@+id/mainColorPlateLeft"
@@ -52,7 +50,7 @@
         android:src="@android:color/darker_gray"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mainColorPercentLeft" />
+        app:layout_constraintTop_toBottomOf="@id/mainColorSeekLeft" />
 
     <ImageView
         android:id="@+id/mainColorPlateRight"
@@ -63,7 +61,7 @@
         android:src="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mainColorPercentLeft" />
+        app:layout_constraintTop_toBottomOf="@id/mainColorSeekLeft" />
 
     <TextView
         android:id="@+id/mainColorPlateAdd"
@@ -117,6 +115,7 @@
         android:layout_marginTop="28dp"
         android:gravity="center"
         android:includeFontPadding="false"
+        android:paddingTop="0dp"
         android:text="@string/symbol_equal_portrait"
         android:textSize="@dimen/fontSize48"
         android:textStyle="bold"
@@ -127,7 +126,7 @@
         app:layout_constraintTop_toBottomOf="@id/mainColorPlateAdd" />
 
     <ImageView
-        android:id="@+id/mainColorPlateFinal"
+        android:id="@+id/mainColorPlateRequest"
         android:layout_width="320dp"
         android:layout_height="320dp"
         android:layout_marginTop="8dp"
@@ -140,7 +139,7 @@
         app:layout_constraintTop_toBottomOf="@id/mainColorPlateEqual" />
 
     <TextView
-        android:id="@+id/mainColorPlateFinalRGB"
+        android:id="@+id/mainColorPlateRequestRGB"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -149,11 +148,11 @@
         android:text="@string/rgb_value"
         android:textSize="@dimen/fontSize16"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/mainColorPlateFinal"
-        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateFinal"
-        app:layout_constraintRight_toRightOf="@id/mainColorPlateFinal"
-        app:layout_constraintStart_toStartOf="@id/mainColorPlateFinal"
-        app:layout_constraintTop_toBottomOf="@id/mainColorPlateFinal" />
+        app:layout_constraintEnd_toEndOf="@id/mainColorPlateRequest"
+        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateRequest"
+        app:layout_constraintRight_toRightOf="@id/mainColorPlateRequest"
+        app:layout_constraintStart_toStartOf="@id/mainColorPlateRequest"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateRequest" />
 
     <TextView
         android:layout_width="0dp"
@@ -165,9 +164,9 @@
         android:textColor="#ff0000"
         android:textSize="@dimen/fontSize26"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/mainColorPlateFinalRGB"
-        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateFinalRGB"
-        app:layout_constraintRight_toRightOf="@id/mainColorPlateFinalRGB"
-        app:layout_constraintStart_toStartOf="@id/mainColorPlateFinalRGB"
-        app:layout_constraintTop_toBottomOf="@id/mainColorPlateFinalRGB" />
+        app:layout_constraintEnd_toEndOf="@id/mainColorPlateRequestRGB"
+        app:layout_constraintLeft_toLeftOf="@id/mainColorPlateRequestRGB"
+        app:layout_constraintRight_toRightOf="@id/mainColorPlateRequestRGB"
+        app:layout_constraintStart_toStartOf="@id/mainColorPlateRequestRGB"
+        app:layout_constraintTop_toBottomOf="@id/mainColorPlateRequestRGB" />
 </androidx.constraintlayout.widget.ConstraintLayout>
